@@ -42,10 +42,10 @@ function App() {
         <section id='social' className='col-span-1 row-span-1 md:col-span-1 md:row-span-4 bg-background-main place-items-center md:border-l md:border-t-0 border-t border-text_dark' >
           <div className='grid md:grid-cols-3 place-items-center self-center h-full content-center'>
             <div className='flex flex-row md:flex-col col-span-3 md:rows-span-4'>
-              <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent'>{facebookIcon}</span>
-              <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent'>{twitterIcon}</span>
-              <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent'>{instagramIcon}</span>
-              <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent '>{discordIcon}</span>
+              <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent'><a href='https://facebook.com'>{facebookIcon}</a></span>
+              <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent'><a href='https://twitter.com'>{twitterIcon}</a></span>
+              <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent'><a href='https://instagram.com'>{instagramIcon}</a></span>
+              <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent '><a href='https://discord.com'>{discordIcon}</a></span>
             </div>
           </div>
         </section>
