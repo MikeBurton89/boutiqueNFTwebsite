@@ -8,7 +8,6 @@ function App() {
   const instagramIcon = <FontAwesomeIcon size='3x' icon={faInstagram} />
   const discordIcon = <FontAwesomeIcon size='3x' icon={faDiscord} />
   const facebookIcon = <FontAwesomeIcon size='3x' icon={faFacebook} />
-
   const openSeaLogo = <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" >
     <path d="M90 45C90 69.8514 69.8514 90 45 90C20.1486 90 0 69.8514 0 45C0 20.1486 20.1486 0 45 0C69.8566 0 90 20.1486 90 45Z" fill="none" />
     <path d="M22.2011 46.512L22.3952 46.2069L34.1015 27.8939C34.2726 27.6257 34.6748 27.6535 34.8043 27.9447C36.7599 32.3277 38.4475 37.7786 37.6569 41.1721C37.3194 42.5683 36.3947 44.4593 35.3544 46.2069C35.2204 46.4612 35.0724 46.7109 34.9152 46.9513C34.8413 47.0622 34.7164 47.127 34.5823 47.127H22.5432C22.2195 47.127 22.03 46.7756 22.2011 46.512Z" fill="#3f0d0c" />
@@ -18,11 +17,11 @@ function App() {
   return (
     <div className="h-screen w-screen">
       <main className='h-full grid grid-cols-1 grid-rows-6 md:grid-cols-4 md:grid-rows-6'>
-        <div id='title' className='col-span-1 row-span-3 md:col-span-3 md:row-span-4 w-full h-full bg-background-accent place-content-center'>
-          <div className='grid md:grid-cols-3 md:grid-rows-3 h-full place-items-center'>
+        <section id='title' className='col-span-1 row-span-3 md:col-span-3 md:row-span-4 w-full h-full bg-background-accent place-content-center'>
+          <div className='grid md:grid-cols-3 md:grid-rows-3 h-full place-items-center px-2'>
             <h1 className='md:col-span-3 md:row-span-1 md:text-7xl lg:text-8xl text-5xl text-text_dark font-serif'>Boutique NFT</h1>
             <div className='md:col-span-3 md:row-span-1'>
-              <p className='text-sm md:col-span-3 md:row-span-3 mx-3 py-2 px-6 text-text_dark'>
+              <p className='text-xs md:text-base md:col-span-3 md:row-span-3 mx-3 py-2 px-6 text-text_dark'>
                 Buy our NFT token and get access to exclusive sales on boutique and fashion products.
               </p>
             </div>
@@ -34,8 +33,8 @@ function App() {
               </button>
             </span>
           </div>
-        </div>
-        <div id='social' className='col-span-1 row-span-1 md:col-span-1 md:row-span-4 bg-background-main place-items-center md:border-l md:border-t-0 border-t border-text_dark' >
+        </section>
+        <section id='social' className='col-span-1 row-span-1 md:col-span-1 md:row-span-4 bg-background-main place-items-center md:border-l md:border-t-0 border-t border-text_dark' >
           <div className='grid md:grid-cols-3 place-items-center self-center h-full content-center'>
             <div className='flex flex-row md:flex-col col-span-3 md:rows-span-4'>
               <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent'>{facebookIcon}</span>
@@ -44,8 +43,8 @@ function App() {
               <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent'>{discordIcon}</span>
             </div>
           </div>
-        </div>
-        <div id='slideshow' className='col-span-1 row-span-2 md:col-span-4 md:row-span-2 bg-background-main border-t border-text_dark' >
+        </section>
+        <section id='slideshow' className='col-span-1 row-span-2 md:col-span-4 md:row-span-2 bg-background-main border-t border-text_dark' >
           <Marquee gradient={false}>
             <div className='border border-text_dark'>
               <img src={'./assets/Balenciaga-sneakers-wh.png'} alt='Balenciaga Shoes' />
@@ -60,7 +59,7 @@ function App() {
               <p>Prova</p>
             </div>
           </Marquee>
-        </div>
+        </section>
       </main >
     </div >
   );
