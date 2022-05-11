@@ -1,13 +1,18 @@
-import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import Marquee from 'react-fast-marquee';
+import balenciagaSneakersWh from './assets/Balenciaga-sneakers-wh.png'
+import balenciagaSneakers from './assets/Balenciaga-sneakers.png'
+import designerBag from './assets/Designer-bag.png'
+import designerSneaker from './assets/Designer-sneaker.png'
+
 
 function App() {
   const twitterIcon = <FontAwesomeIcon size='3x' icon={faTwitter} />
   const instagramIcon = <FontAwesomeIcon size='3x' icon={faInstagram} />
   const discordIcon = <FontAwesomeIcon size='3x' icon={faDiscord} />
   const facebookIcon = <FontAwesomeIcon size='3x' icon={faFacebook} />
+
   const openSeaLogo = <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" >
     <path d="M90 45C90 69.8514 69.8514 90 45 90C20.1486 90 0 69.8514 0 45C0 20.1486 20.1486 0 45 0C69.8566 0 90 20.1486 90 45Z" fill="none" />
     <path d="M22.2011 46.512L22.3952 46.2069L34.1015 27.8939C34.2726 27.6257 34.6748 27.6535 34.8043 27.9447C36.7599 32.3277 38.4475 37.7786 37.6569 41.1721C37.3194 42.5683 36.3947 44.4593 35.3544 46.2069C35.2204 46.4612 35.0724 46.7109 34.9152 46.9513C34.8413 47.0622 34.7164 47.127 34.5823 47.127H22.5432C22.2195 47.127 22.03 46.7756 22.2011 46.512Z" fill="#3f0d0c" />
@@ -40,23 +45,23 @@ function App() {
               <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent'>{facebookIcon}</span>
               <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent'>{twitterIcon}</span>
               <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent'>{instagramIcon}</span>
-              <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent'>{discordIcon}</span>
+              <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent '>{discordIcon}</span>
             </div>
           </div>
         </section>
         <section id='slideshow' className='col-span-1 row-span-2 md:col-span-4 md:row-span-2 bg-background-main border-t border-text_dark' >
-          <Marquee gradient={false}>
-            <div className='border border-text_dark'>
-              <img src={'./assets/Balenciaga-sneakers-wh.png'} alt='Balenciaga Shoes' />
+          <Marquee speed={30} gradient={false}>
+            <div>
+              <img src={balenciagaSneakersWh} alt='Balenciaga Shoes' className='md:w-1/4 md:h-1/4 w-1/5 h-1/5' />
             </div>
             <div>
-              <p>Prova</p>
+              <img src={balenciagaSneakers} alt='Balenciaga Shoes' className='md:w-1/4 md:h-1/4 w-1/5 h-1/5' />
             </div>
             <div>
-              <p>Prova</p>
+              <img src={designerBag} alt='Balenciaga Shoes' className='md:w-1/4 md:h-1/4 w-1/5 h-1/5' />
             </div>
             <div>
-              <p>Prova</p>
+              <img src={designerSneaker} alt='Balenciaga Shoes' className='md:w-1/4 md:h-1/4 w-1/5 h-1/5' />
             </div>
           </Marquee>
         </section>
