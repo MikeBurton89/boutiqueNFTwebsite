@@ -15,7 +15,7 @@ const SocialSection = () => {
                     <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent'><a href='https://facebook.com'>{facebookIcon}</a></span>
                     <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent'><a href='https://twitter.com'>{twitterIcon}</a></span>
                     <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent'><a href='https://instagram.com'>{instagramIcon}</a></span>
-                    <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent '><a href='https://discord.com'>{discordIcon}</a></span>
+                    <span className='py-2 px-4 md:py-10 text-text_dark hover:text-accent '><a href='https://discord.gg/ME37ZZ8x3B'>{discordIcon}</a></span>
                 </div>
             </div>
         </section>
