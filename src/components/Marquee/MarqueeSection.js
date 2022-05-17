@@ -1,8 +1,7 @@
 import React from 'react'
 import Marquee from 'react-fast-marquee';
 import MarqueeElement from './MarqueeElement';
-import { imagesData } from '../../imagesData'
-
+import { imagesData } from './imagesData'
 
 const MarqueeSection = () => {
     return (
