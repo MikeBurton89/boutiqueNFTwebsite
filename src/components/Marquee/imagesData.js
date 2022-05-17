@@ -41,7 +41,7 @@ export const imagesData = [
     },
     {
         name: 'Dsquared-swimming-costume.png',
-        title: 'Dsquared Swimming Costume',
+        title: 'Dsquared Swimming suits',
         src: Dsquared,
         alt: 'Dsquared Swimming suit'
     },
